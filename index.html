@@ -34,11 +34,145 @@
     <div class="container py-4">
       <h1>Bienvenue à Biblio Marrakech</h1>
       <p class="mt-3">Bienvenue sur votre plateforme dédiée à la lecture et au savoir à Marrakech. Découvrez une vaste collection d'ouvrages, des grands classiques de la littérature aux dernières nouveautés techniques et scientifiques. Explorez notre catalogue en ligne, réservez vos livres préférés et profitez d'un espace pensé pour enrichir votre culture et accompagner vos études au quotidien.</p>
-      <a href="#formations" class="btn btn-success mt-2 mon-bouton">Voir les formations</a>
+      <a href="#Books" class="btn btn-success mt-2 mon-bouton">Voir les livres disponibles</a>
     </div>
   </section>
 
 
+  <section id="livres" class="py-4">
+  <div class="container">
+    <h2 class="text-center mb-4">Nos livres disponibles</h2>
 
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 carte-livre">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-success mb-3 align-self-start">Informatique</span>
+            <h5 class="card-title">Apprendre codage</h5>
+            <p class="card-text text-muted">Auteur : Jean Dupont</p>
+            <p class="card-text">Un guide complet pour apprendre à concevoir des sites web modernes et réactifs.</p>
+            <p class="text-success fw-bold mt-auto">Disponible au prêt</p>
+            <a href="#contact" class="btn btn-primary w-100">Réserver le livre</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 carte-livre">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-primary mb-3 align-self-start">Littérature</span>
+            <h5 class="card-title">Le Petit Prince</h5>
+            <p class="card-text text-muted">Auteur : Antoine de Saint-Exupéry</p>
+            <p class="card-text">Un conte poétique et philosophique adapté à tous les âges.</p>
+            <p class="text-success fw-bold mt-auto">Disponible au prêt</p>
+            <a href="#contact" class="btn btn-primary w-100">Réserver le livre</a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 carte-livre">
+          <div class="card-body d-flex flex-column">
+            <span class="badge bg-warning text-dark mb-3 align-self-start">Sciences</span>
+            <h5 class="card-title">Une brève histoire du temps</h5>
+            <p class="card-text text-muted">Auteur : Stephen Hawking</p>
+            <p class="card-text">Une exploration passionnante des secrets de l'univers et de la physique moderne.</p>
+            <p class="text-success fw-bold mt-auto">Disponible au prêt</p>
+            <a href="#contact" class="btn btn-primary w-100">Réserver le livre</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact / Réservation de livre</h2>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <form class="bg-white p-4 rounded shadow-sm">
+          
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nom et Prénom</label>
+            <input type="text" class="form-field form-control" id="nom" placeholder="Ex: Adil Farouk" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Adresse Email</label>
+            <input type="email" class="form-field form-control" id="email" placeholder="exemple@mail.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="livre" class="form-label">Livre à réserver</label>
+            <select class="form-select" id="livre" required>
+              <option value="" selected disabled>Choisissez un livre...</option>
+              <option value="apprendre-codage">Apprendre codage</option>
+              <option value="petit-prince">Le Petit Prince</option>
+              <option value="histoire-du-temps">Une brève histoire du temps</option>
+              <option value="autre">Autre demande / Question générale</option>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="form-label">Message / Remarques</label>
+            <textarea class="form-field form-control" id="message" rows="4" placeholder="Précisez votre demande ici..."></textarea>
+          </div>
+
+          <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-primary w-50">Valider</button>
+            <button type="reset" class="btn btn-outline-danger w-50">Effacer</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-12 col-md-4">
+        <h5 class="text-uppercase fw-bold text-primary mb-3">Biblio Marrakech</h5>
+        <p class="text-secondary">Votre espace culturel et éducatif dédié à la promotion de la lecture, du savoir et du partage de connaissances au cœur de Marrakech.</p>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h5 class="text-uppercase fw-bold mb-3">Navigation</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#welcome" class="text-secondary text-decoration-none">Bienvenue</a></li>
+          <li class="mb-2"><a href="#livres" class="text-secondary text-decoration-none">Nos livres disponibles</a></li>
+          <li class="mb-2"><a href="#services" class="text-secondary text-decoration-none">Nos services</a></li>
+          <li class="mb-2"><a href="#contact" class="text-secondary text-decoration-none">Contact / Réservation</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h5 class="text-uppercase fw-bold mb-3">Contact & Horaires</h5>
+        <p class="text-secondary mb-1">📍 Avenue Abdelkrim El Khattabi, Marrakech</p>
+        <p class="text-secondary mb-1">📞 +212 5 24 00 00 00</p>
+        <p class="text-secondary mb-3">✉️ contact@bibliomarrakech.ma</p>
+        <p class="small text-muted">Ouvert du Lundi au Samedi : 08h30 - 18h30</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary my-4">
+
+    <div class="row text-center text-secondary small">
+      <div class="col">
+        <p class="mb-0">&copy; 2026 Biblio Marrakech - Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>
